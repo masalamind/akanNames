@@ -9,7 +9,10 @@ function userDataProcessing(sex,birthDate){
     // if the user is male determine their male akan name else if they're female determine their female akan name
 
     
-    let AkanName = sex === "male" ? maleAkanNaming(dayOfWeek) : femaleAkanNaming(dayOfWeek);
+    let AkanName = " ";
+    
+    
+    sex === "male" ? AkanName = maleAkanNaming(dayOfWeek) : AkanName = femaleAkanNaming(dayOfWeek);
 
     return AkanName;
 
@@ -81,61 +84,61 @@ function maleAkanNaming(dayOfWeek){
 }
 
 
-// // Return an Akan name for women: case 1 is Sunday
+// Return an Akan name for women: case 1 is Sunday
 
-// function femaleAkanNaming(dayOfWeek){
+function femaleAkanNaming(dayOfWeek){
 
-//     switch(dayOfWeek){
+    switch(dayOfWeek){
         
-//         case 1:
-//             return "Akosua"; 
-//             break;
+        case 1:
+            return "Akosua"; 
+            break;
         
-//         case 2:
-//             return "Adwoa; 
-//             break;
+        case 2:
+            return "Adwoa"; 
+            break;
         
-//         case 3:
-//             return "Abenaa"; 
-//             break;
+        case 3:
+            return "Abenaa"; 
+            break;
         
-//         case 4:
-//             return "Akua"; 
-//             break;
+        case 4:
+            return "Akua"; 
+            break;
         
-//         case 5:
-//             return "Yaa"; 
-//             break;
+        case 5:
+            return "Yaa"; 
+            break;
         
-//         case 6:
-//             return "Afua"; 
-//             break;
+        case 6:
+            return "Afua"; 
+            break;
         
-//         case 7:
-//             return "Ama"; 
-//             break;
+        case 7:
+            return "Ama"; 
+            break;
 
-//         default: 
-//             return dayOfWeek;
-//             break;
+        default: 
+            return dayOfWeek;
+            break;
 
-//     }
+    }
             
-// }
+}
 
 
 // Fetch user inputs from form on submit
-
-const myForm = document.forms['genderAndDob'];
+var myForm = document.forms['genderAndDob'];
 
 
 myForm.addEventListener('submit', function(e){
-
+    
     e.preventDefault();
 
-    const gender = myForm.querySelector("input[type='radio']").value;
-    const dob = myForm.querySelector("input[type='date']").value;
+    var gender = myForm.querySelector("input[type='radio']").value;
+    var dob = myForm.querySelector("input[type='date']").value;
 
+    console.log("First of all the gender is: " + gender);
     console.log(gender, dob); 
       
     console.log( "Your Akan name is: " + userDataProcessing(gender,dob));
