@@ -150,8 +150,7 @@ myForm.addEventListener('submit', function(e){
     }
         
     var dob = myForm.querySelector("input[type='date']").value;
-
-    console.log(gender, dob);       
+      
     console.log( "Your Akan name is: " + userDataProcessing(gender,dob));
        
 });

@@ -1,38 +1,41 @@
 <!DOCTYPE html>
 
 <html lang="en">
-    
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Discover your Akan Name</title>
+        <title>Discover your Akan Name</title>
 
-</head>
+    </head>
 
-<body>
+    <body>
 
 
-    <h1>Discover Your Akan Name</h1>
-    <p>In Ghananian culture, when a child is born they are given a name 
-        based on the day of the week they were born to represent ....
-    </p>
+        <h1>Discover Your Akan Name</h1>
+        <p>In Ghananian culture, when a child is born they are given a name 
+            based on the day of the week they were born to represent ....
+        </p>
 
-    <form action="">
-        <label for="male"> Male </label>
-        <input type="radio" name="gender" id="male" value="male">
+        <form action="" method="post" name="genderAndDob" id="genderAndDob">
+            <label for="male"> Male </label>
+            <input type="radio" name="gender" id="male" value="male"><br>
 
-        <label for="female"> Female </label>
-        <input type="radio" name="gender" id="female" value="female">
+            <label for="female"> Female </label>
+            <input type="radio" name="gender" id="female" value="female"><br>
 
-        <label for="dob">Date of Birth</label>
-        <input type="date" name="dob" id="dob">
+            <label for="dob">Date of Birth</label>
+            <input type="date" name="dob" id="dob"><br>
 
-        <button type="submit"> Search your Akan Name</button>
+            <button type="submit"> Search your Akan Name</button>
 
-    </form>
-    
-</body>
+        </form>
+        
+        <script src="scripts/business_logic_processing.js"> </script>
+        
+    </body>
+
 
 </html>
