@@ -22,5 +22,57 @@ function calculateDayOfWeek(dateOfBirth){
 
 
 
+// Return an Akan name for men: case 1 is Sunday
+
+function maleAkanNaming(dayOfWeek){
+
+    switch(dayOfWeek):
+        
+        case 1:
+            return "Kwasi"; 
+            break;
+        
+        case 2:
+            return "Kwadwo"; 
+            break;
+        
+        case 3:
+            return "Kwabena"; 
+            break;
+        
+        case 4:
+            return "Kwaku"; 
+            break;
+        
+        case 5:
+            return "Yaw"; 
+            break;
+        
+        case 6:
+            return "Kofi"; 
+            break;
+        
+        case 7:
+            return "Kwame"; 
+            break;
+        
+}
 
 
+
+
+
+Female
+Sunday: Akosua
+
+Monday: Adwoa
+
+Tuesday: Abenaa
+
+Wednesday: Akua
+
+Thursday:  Yaa
+
+Friday: Afua
+
+Saturday: Ama
