@@ -127,20 +127,28 @@ function femaleAkanNaming(dayOfWeek){
 }
 
 
+// START OF MAIN PROCESSING
+
 // Fetch user inputs from form on submit
 var myForm = document.forms['genderAndDob'];
 
+var genderOptions = document.querySelectorAll('input[name="gender"]');
 
 myForm.addEventListener('submit', function(e){
     
     e.preventDefault();
 
-    var gender = myForm.querySelector("input[type='radio']").value;
+    let gender;
+
     var dob = myForm.querySelector("input[type='date']").value;
 
+    for (let genderOption of genderOptions){
+
+        if(genderOption.checked){ gender = genderOption.value;  }    }
+   
+
     console.log("First of all the gender is: " + gender);
-    console.log(gender, dob); 
-      
+    console.log(gender, dob);       
     console.log( "Your Akan name is: " + userDataProcessing(gender,dob));
        
 });
