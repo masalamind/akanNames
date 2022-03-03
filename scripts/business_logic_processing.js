@@ -16,7 +16,6 @@ function calculateDayOfWeek(dateOfBirth){
 
     return dayOfWeek;
 
-
 }
 
 
@@ -24,7 +23,7 @@ function calculateDayOfWeek(dateOfBirth){
 
 function maleAkanNaming(dayOfWeek){
 
-    switch(dayOfWeek):
+    switch(dayOfWeek){
         
         case 1:
             return "Kwasi"; 
@@ -53,7 +52,8 @@ function maleAkanNaming(dayOfWeek){
         case 7:
             return "Kwame"; 
             break;
-        
+    }
+
 }
 
 
@@ -61,7 +61,7 @@ function maleAkanNaming(dayOfWeek){
 
 function femaleAkanNaming(dayOfWeek){
 
-    switch(dayOfWeek):
+    switch(dayOfWeek){
         
         case 1:
             return "Akosua"; 
@@ -90,7 +90,9 @@ function femaleAkanNaming(dayOfWeek){
         case 7:
             return "Ama"; 
             break;
-        
+
+    }
+            
 }
 
 
