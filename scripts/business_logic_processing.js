@@ -1,17 +1,19 @@
-// Scripts takes gender and day of birth values and returns an akan name
+/* 
+    Scripts takes gender and day of birth values and returns an akan name.
+    Begins by defining the functions that will be used. 
 
+*/
+
+// Main function to execute the logic 
 
 function userDataProcessing(sex,birthDate){
-
     
+    let AkanName;    
+    
+    // Determine the day in the week that they were born 
     dayOfWeek = calculateDayOfWeek(birthDate);
-
-    // if the user is male determine their male akan name else if they're female determine their female akan name
-
     
-    let AkanName = " ";
-    
-    
+    // if the user is male determine their male akan name otherwise they're female thus determine their female akan name
     sex === "male" ? AkanName = maleAkanNaming(dayOfWeek) : AkanName = femaleAkanNaming(dayOfWeek);
 
     return AkanName;
@@ -19,12 +21,12 @@ function userDataProcessing(sex,birthDate){
 }
 
 
-// Calculate the day of week of birth: Monday - Sunday 
-// format of form inputs: male/female 2000-01-01
+// Calculate the day of week of their birth given a birth date: Sun:1, Mon:2, Tue:3, Wed:4, Thur:5, Fri:6, Sat:7 
+// Format of form inputs: male/female 2000-01-01 : yyyy-mm-dd
 
 function calculateDayOfWeek(dateOfBirth){
 
-    // extract the digits from the dob string  
+    // Extract the digits from the dob string  
     let centuryInCenturyNumber = parseInt(dateOfBirth.slice(0,2));
     let yearInCenturyNumber = parseInt(dateOfBirth.slice(2,4)); 
     let monthNumber = parseInt(dateOfBirth.slice(5,7));
@@ -66,7 +68,7 @@ function maleAkanNaming(dayOfWeek){
         
         case 5:
             return "Yaw"; 
-            break;
+            break;            
         
         case 6:
             return "Kofi"; 
@@ -126,28 +128,29 @@ function femaleAkanNaming(dayOfWeek){
             
 }
 
-
 // START OF MAIN PROCESSING
 
-// Fetch user inputs from form on submit
 var myForm = document.forms['genderAndDob'];
 
-var genderOptions = document.querySelectorAll('input[name="gender"]');
+
+// Bind an event to the submit function that will take the inputs from the user 
 
 myForm.addEventListener('submit', function(e){
     
     e.preventDefault();
-
+    
     let gender;
-
+    
+    var genderOptions = document.querySelectorAll('input[name="gender"]');
+    
+    for (let genderOption of genderOptions){
+        
+        if(genderOption.checked){ gender = genderOption.value; }   
+    
+    }
+        
     var dob = myForm.querySelector("input[type='date']").value;
 
-    for (let genderOption of genderOptions){
-
-        if(genderOption.checked){ gender = genderOption.value;  }    }
-   
-
-    console.log("First of all the gender is: " + gender);
     console.log(gender, dob);       
     console.log( "Your Akan name is: " + userDataProcessing(gender,dob));
        
