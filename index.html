@@ -9,7 +9,9 @@
 
         <title>Discover your Akan Name</title>     
 
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
         <link rel="stylesheet" href="styles/styles.css" >
 
         <script src="https://kit.fontawesome.com/d3d56d9400.js" crossorigin="anonymous"></script>
@@ -19,9 +21,8 @@
     <body>
         
          <header>
-            <div class="nav navbar-light bg-light"> 
-                
-            </div> 
+            <div class="nav"> </div>         
+           
 
          </header>   
       
@@ -29,17 +30,18 @@
         <main class="text-center full-width">
         
             <h1 class="black-txt">Discover Your <span class="blue-txt">Akan </span>Name</h1>
-            <p>In Ghananian culture, when a child is born they are given a first name 
+            <br>
+            <p>In Ghanaian culture, when a child is born they are given a first name 
                  as a 'day name' which corresponds to the day in the week they were born. This is their Akan name. 
-
             </p>
+
             <p>Fill in your gender and date of birth below to find out what yours is.</p>
-            <div class="spacer"> </div>
 
+            <div class="spacer"> </div><br> 
+            
 
-            <br> <br>
             <form action="" method="post" name="genderAndDob" id="genderAndDob">
-               <div class="container sticky-top"> 
+               <div class="container"> 
 
                 <div class="row">
 
@@ -56,35 +58,32 @@
 
                     <div class="dob col-lg-4 col-md-6">
                         <span class="input-label"><i class="fa-solid fa-baby"></i> Date of Birth </span>
-
                         <input type="date" name="dob" id="dob" required>
 
                     </div>
 
-                    <div class="search col-lg-4 col-md-6">
-                        <button type="submit" class="btn-primary"> <i class="fa-solid fa-magnifying-glass"></i> Search Name</button>
+                    <div class="search col-lg-4 col-md-6 d-flex align-items-start">
+                        <button type="submit" class="btn-primary shadow"> <i class="fa-solid fa-magnifying-glass"></i> Search Name</button>
                        
                     </div>               
                               
                 </div> <!-- .container -->
             </form>
+
             <br><br>
 
-            <div class="resultArea">             
-
+            <div class="resultArea">  
                 <div class="accordion" id="akanNameAccordion">
 
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="flush-headingOne">
                             <button class="accordion-button collapsed akanNameStyle" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne" id="nameOutput">
-                            
-                           
-                            </button>
-                            
+                                                       
+                            </button>                            
                         </h2>
 
                         <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                            <div class="accordion-body"> Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body. </div>
                         
                         </div>
 
@@ -93,10 +92,10 @@
                 </div>
            
             </div>
+
         </main>  
 
-        
-        </div>
+               
         <!-- JavaScript Bundle with Popper -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
         <script src="scripts/business_logic_processing.js"> </script>

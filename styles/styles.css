@@ -1,82 +1,79 @@
 @import url('https://fonts.googleapis.com/css2?family=Palette+Mosaic&display=swap');
 
+
+
 body{
-  color: #393939;
-  overflow: hidden;
+    color: #393939;
+    overflow-x: hidden;
+    text-align: center;
+
 }
 
-.green-txt{color: #8E7F56;}
+main{ padding-top: 5%; }
+
+.nav{
+    background-size: 180px;
+    background-image: url("../images/coloredfolksbg.jpg");
+    background-repeat: repeat-x;
+    height: 7em;
+    
+}
+
+.green-txt{ color: #8E7F56; }
 .blue-txt{ color:rgb(80,168,189);}
-.black-txt{color: #393939; }
+.black-txt{ color: #393939; }
 .dark-red-txt{ color: #912B0E; }
 
 
-
 .akanNameStyle{
-    color: #8E7F56;
+    color: #912B0E;
     font-size: 1em;
     font-family: 'Palette Mosaic', cursive;
 }
 
-h1{
-    font-family: 'Palette Mosaic', cursive;
-    font-size: 5em;
-  
-}
+.spacer{ margin-top: 5%; }
 
 
 .full-width{
     height: 100vh;
     width: 100vw;
+    
+}
 
+
+h1{
+    font-family: 'Palette Mosaic', cursive;
+    font-size: 5em;  
+    
 }
 
 
 form input{
+    height: 1em;   
     width: 1em;
-    height: 1em;
     
-
 }
 
 
-.spacer{
-
-    margin-top: 5%;
-}
-
-form .input-border{
-    
-    border: 4px solid  #912B0E;
+form .input-border{    
+    border: 4px solid  #E38D3B;
     border-radius: 10px; 
-    width: 40%;
     padding: 1em;
+    width: 40%;
+    
 }
 
-
-.nav{
-    height: 7em;
-    background-size: 180px;
-    background-image: url("../images/coloredfolksbg.jpg");
-    background-repeat: repeat-x;
-    /* background-repeat: ; */
-}
-
-
-.gender{
-   
-    border: solid 2px #912B0E;
+.gender{   
+    border: solid 2px #E38D3B;
     border-right: none;
     border-radius: 1em 0 0 1em;
     padding: 2em;
-
-
+    
 }
 
 
 .dob{
-  
-    border: solid 2px #912B0E;
+    border: solid 2px #E38D3B;
     border-left: none;
     padding: 2em;
     border-radius: 0 1em 1em 0;
@@ -86,54 +83,41 @@ form .input-border{
 
 
 .btn-primary{
-    background-color: #912B0E;
+    background-color: #E38D3B;
     padding: 3em;   
     border-radius: 1em;   
     border: none;
     font-weight: bold; 
-
+    width: 100%;
+    
 }
 
-.btn-primary:hover{
-    background-color: #8E7F56;
-}
-
-main{
-    text-align:center;
-    padding-top: 5%;
-}
+.btn-primary:hover{ background-color: rgb(80,168,189); }
 
 .shadow{
     box-shadow: -2px 15px 19px -8px rgba(0,0,0,0.75);
     -webkit-box-shadow: -2px 15px 19px -8px rgba(0,0,0,0.75);
     -moz-box-shadow: -2px 15px 19px -8px rgba(0,0,0,0.75);
+    
 }
 
 input[type="radio"]{ margin-right: 1em;}
 
 input[type="date"]{
-
+    border: none;
     margin-left: 0 auto;
     width: 200px;
     padding: 1em;
-    border: none;
-
-}
-
-
-.sex-icon label{
-    margin-bottom: 1em;
-}
-
-span.input-label{
-
-    color: #58B6CA;
-    text-transform: uppercase;
-
     
 }
 
 
-span.input-label::after{
-    content: "|";
+.sex-icon label{ margin-bottom: 1em; }
+
+span.input-label{
+    color: #58B6CA;
+    text-transform: uppercase;
+        
 }
+    
+span.input-label::after{ content: "|"; }
