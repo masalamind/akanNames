@@ -3,7 +3,6 @@
 .full-width{
     height: 100vh;
     width: 100vw;
-    background-color: pink;
 }
 
 
@@ -14,12 +13,6 @@ form input{
 
 }
 
-form input[type="date"]{
-    margin-left: 2em;
-    width: 15em;
-    padding: 1em;
-    border: none;
-}
 
 form .input-border{
     
@@ -36,18 +29,64 @@ form .input-border{
 
 
 .gender{
-    background-color:purple;
+   
+    border: solid 2px blue;
+    border-right: none;
+    border-radius: 1em 0 0 1em;
+    padding: 2em;
+
 
 }
 .dob{
-    background-color: blue;
+  
+    border: solid 2px blue;
+    border-left: none;
+    padding: 2em;
+    border-radius: 0 1em 1em 0;
+    
 }
 
-.search{ background-color:yellow;}
+.search{ }
 .result{
     background-color: blue;
 }
 
 .explore{
     background-color: yellow;
+}
+
+.btn-outline-primary{
+   
+    padding: 3em;   
+    border-radius: 1em;    
+
+}
+
+input[type="radio"]{ margin-right: 1em;}
+
+input[type="date"]{
+
+    margin-left: 0 auto;
+    width: 200px;
+    padding: 1em;
+    border: none;
+
+}
+
+
+.sex-icon label{
+    margin-bottom: 1em;
+}
+
+span.input-label{
+
+    color: purple;
+    text-transform: uppercase;
+
+    
+}
+
+
+span.input-label::after{
+    content: "|";
 }
