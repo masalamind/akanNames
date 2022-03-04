@@ -2,18 +2,19 @@
 
 body{
   color: #393939;
+  overflow: hidden;
 }
 
-.green-txt{color: #737832;}
-.blue-txt{ color:#56A8A4;}
+.green-txt{color: #8E7F56;}
+.blue-txt{ color:rgb(80,168,189);}
 .black-txt{color: #393939; }
-.dark-red-txt{ color: #9B4148; }
+.dark-red-txt{ color: #912B0E; }
 
 
 
 .akanNameStyle{
-    color: #56A8A4;
-    font-size: 2em;
+    color: #8E7F56;
+    font-size: 1em;
     font-family: 'Palette Mosaic', cursive;
 }
 
@@ -27,6 +28,7 @@ h1{
 .full-width{
     height: 100vh;
     width: 100vw;
+
 }
 
 
@@ -45,7 +47,7 @@ form input{
 
 form .input-border{
     
-    border: 4px solid purple;
+    border: 4px solid  #912B0E;
     border-radius: 10px; 
     width: 40%;
     padding: 1em;
@@ -63,7 +65,7 @@ form .input-border{
 
 .gender{
    
-    border: solid 2px #9B4148;
+    border: solid 2px #912B0E;
     border-right: none;
     border-radius: 1em 0 0 1em;
     padding: 2em;
@@ -74,7 +76,7 @@ form .input-border{
 
 .dob{
   
-    border: solid 2px #9B4148;
+    border: solid 2px #912B0E;
     border-left: none;
     padding: 2em;
     border-radius: 0 1em 1em 0;
@@ -84,7 +86,7 @@ form .input-border{
 
 
 .btn-primary{
-    background-color: #9B4148;;
+    background-color: #912B0E;
     padding: 3em;   
     border-radius: 1em;   
     border: none;
@@ -93,12 +95,12 @@ form .input-border{
 }
 
 .btn-primary:hover{
-    background-color: #737832;
+    background-color: #8E7F56;
 }
 
 main{
     text-align:center;
-    padding-top: 10%;
+    padding-top: 5%;
 }
 
 .shadow{
@@ -125,7 +127,7 @@ input[type="date"]{
 
 span.input-label{
 
-    color: #56A8A4;
+    color: #58B6CA;
     text-transform: uppercase;
 
     

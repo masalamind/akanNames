@@ -159,7 +159,14 @@ myForm.addEventListener('submit', function(e){
     
     let usersAkanName = userDataProcessing(gender,dob);
 
-    nameOutputSection.textContent = usersAkanName;
+    if(gender==="female"){
+        nameOutputSection.textContent = "You're " + usersAkanName + ". Daughter, Arise!";
+
+    }else{
+        nameOutputSection.textContent = "You're " + usersAkanName + ". Son, Arise!";
+    }
+    
+    
     
        
 });
