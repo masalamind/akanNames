@@ -55,11 +55,24 @@ form .input-border{
     background-color: yellow;
 }
 
-.btn-outline-primary{
+.btn-primary{
    
     padding: 3em;   
-    border-radius: 1em;    
+    border-radius: 1em;   
+    font-weight: bold; 
 
+}
+
+
+main{
+    text-align:center;
+    padding-top: 10%;
+}
+
+.shadow{
+    box-shadow: -2px 15px 19px -8px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -2px 15px 19px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px 15px 19px -8px rgba(0,0,0,0.75);
 }
 
 input[type="radio"]{ margin-right: 1em;}
