@@ -44,6 +44,8 @@ function calculateDayOfWeek(dateOfBirth){
 }
 
 
+
+
 // Return an Akan name for men: case 1 is Sunday
 
 function maleAkanNaming(dayOfWeek){
@@ -127,6 +129,8 @@ function femaleAkanNaming(dayOfWeek){
     }
             
 }
+
+
 
 // START OF MAIN PROCESSING
 
