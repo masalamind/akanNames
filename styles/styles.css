@@ -1,3 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Palette+Mosaic&display=swap');
+
+body{
+  color: #393939;
+}
+
+.green-txt{color: #737832;}
+.blue-txt{ color:#56A8A4;}
+.black-txt{color: #393939; }
+.dark-red-txt{ color: #9B4148; }
+
+
+
+.akanNameStyle{
+    color: #56A8A4;
+    font-size: 2em;
+    font-family: 'Palette Mosaic', cursive;
+}
+
+h1{
+    font-family: 'Palette Mosaic', cursive;
+    font-size: 5em;
+  
+}
 
 
 .full-width{
@@ -14,6 +38,11 @@ form input{
 }
 
 
+.spacer{
+
+    margin-top: 5%;
+}
+
 form .input-border{
     
     border: 4px solid purple;
@@ -24,45 +53,48 @@ form .input-border{
 
 
 .nav{
-    height: 4em;
+    height: 7em;
+    background-size: 180px;
+    background-image: url("../images/coloredfolksbg.jpg");
+    background-repeat: repeat-x;
+    /* background-repeat: ; */
 }
 
 
 .gender{
    
-    border: solid 2px blue;
+    border: solid 2px #9B4148;
     border-right: none;
     border-radius: 1em 0 0 1em;
     padding: 2em;
 
 
 }
+
+
 .dob{
   
-    border: solid 2px blue;
+    border: solid 2px #9B4148;
     border-left: none;
     padding: 2em;
     border-radius: 0 1em 1em 0;
     
 }
 
-.search{ }
-.result{
-    background-color: blue;
-}
 
-.explore{
-    background-color: yellow;
-}
 
 .btn-primary{
-   
+    background-color: #9B4148;;
     padding: 3em;   
     border-radius: 1em;   
+    border: none;
     font-weight: bold; 
 
 }
 
+.btn-primary:hover{
+    background-color: #737832;
+}
 
 main{
     text-align:center;
@@ -93,7 +125,7 @@ input[type="date"]{
 
 span.input-label{
 
-    color: purple;
+    color: #56A8A4;
     text-transform: uppercase;
 
     
