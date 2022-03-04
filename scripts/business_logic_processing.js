@@ -13,7 +13,8 @@ function userDataProcessing(sex,birthDate){
     // Determine the day in the week that they were born 
     dayOfWeek = calculateDayOfWeek(birthDate);
     
-    // if the user is male determine their male akan name otherwise they're female thus determine their female akan name
+    // If the user is male determine their male akan name otherwise they're female thus determine their female akan name
+
     sex === "male" ? AkanName = maleAkanNaming(dayOfWeek) : AkanName = femaleAkanNaming(dayOfWeek);
 
     return AkanName;
@@ -26,7 +27,8 @@ function userDataProcessing(sex,birthDate){
 
 function calculateDayOfWeek(dateOfBirth){
 
-    // Extract the digits from the dob string  
+    // Extract the digits from the dob string
+      
     let centuryInCenturyNumber = parseInt(dateOfBirth.slice(0,2));
     let yearInCenturyNumber = parseInt(dateOfBirth.slice(2,4)); 
     let monthNumber = parseInt(dateOfBirth.slice(5,7));
