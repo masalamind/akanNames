@@ -126,6 +126,7 @@ input[type="date"]{
 span.input-label{
     color: #58B6CA;
     text-transform: uppercase;
+    padding-right: 1em;
         
 }
     
