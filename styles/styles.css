@@ -1,0 +1,53 @@
+
+
+.full-width{
+    height: 100vh;
+    width: 100vw;
+    background-color: pink;
+}
+
+
+form input{
+    width: 1em;
+    height: 1em;
+    
+
+}
+
+form input[type="date"]{
+    margin-left: 2em;
+    width: 15em;
+    padding: 1em;
+    border: none;
+}
+
+form .input-border{
+    
+    border: 4px solid purple;
+    border-radius: 10px; 
+    width: 40%;
+    padding: 1em;
+}
+
+
+.nav{
+    height: 4em;
+}
+
+
+.gender{
+    background-color:purple;
+
+}
+.dob{
+    background-color: blue;
+}
+
+.search{ background-color:yellow;}
+.result{
+    background-color: blue;
+}
+
+.explore{
+    background-color: yellow;
+}
