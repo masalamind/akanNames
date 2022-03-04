@@ -92,7 +92,11 @@ form .input-border{
     
 }
 
-.btn-primary:hover{ background-color: rgb(80,168,189); }
+.btn-primary:hover{ 
+    background-color: rgb(80,168,189); 
+    cursor: pointer;
+
+}
 
 .shadow{
     box-shadow: -2px 15px 19px -8px rgba(0,0,0,0.75);
@@ -101,7 +105,12 @@ form .input-border{
     
 }
 
-input[type="radio"]{ margin-right: 1em;}
+input[type="radio"]{     
+    margin-right: 1em;
+    
+}
+
+input[type="radio"]:hover, label:hover{ cursor: pointer; }
 
 input[type="date"]{
     border: none;
@@ -121,3 +130,4 @@ span.input-label{
 }
     
 span.input-label::after{ content: "|"; }
+

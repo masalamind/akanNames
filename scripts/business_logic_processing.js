@@ -28,7 +28,7 @@ function userDataProcessing(sex,birthDate){
 function calculateDayOfWeek(dateOfBirth){
 
     // Extract the digits from the dob string
-      
+
     let centuryInCenturyNumber = parseInt(dateOfBirth.slice(0,2));
     let yearInCenturyNumber = parseInt(dateOfBirth.slice(2,4)); 
     let monthNumber = parseInt(dateOfBirth.slice(5,7));
@@ -166,8 +166,7 @@ myForm.addEventListener('submit', function(e){
 
     }else{
         nameOutputSection.textContent = "You're " + usersAkanName + ". Son, Arise!";
-    }
-    
+    }    
     
     
        
