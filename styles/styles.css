@@ -105,9 +105,8 @@ form .input-border{
     
 }
 
-input[type="radio"]{     
-    margin-right: 1em;
-    
+.horizontal-space{
+    margin-right: .5em;
 }
 
 input[type="radio"]:hover, label:hover{ cursor: pointer; }
