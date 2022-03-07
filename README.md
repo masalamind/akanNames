@@ -1,4 +1,4 @@
-# AKAN NAMES WEBSITE 
+# AKAN NAMES APP
 Matches users to their Akan names based on their day of birth.
 
 
@@ -12,7 +12,7 @@ Akan names come from the Ghananian African culture.
 ## Access 
 The website is hosted online by github pages online on masalamind.github.io/masalamind 
 The link to the live site is 
-(masalamind portfolio)[https://masalamind.github.io/akanNames/]
+(Akan Names App)[https://masalamind.github.io/akanNames/]
 
 ## Setup Instructions 
 - The program will run in any modern web browser
