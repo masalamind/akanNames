@@ -140,7 +140,6 @@ var myForm = document.forms['genderAndDob'];
 
 var nameOutputSection = document.getElementById("nameOutput");
 
-
 // Bind an event to the submit function that will take the inputs from the user 
 
 myForm.addEventListener('submit', function(e){

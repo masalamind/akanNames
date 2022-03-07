@@ -15,6 +15,7 @@
         <link rel="stylesheet" href="styles/styles.css" >
 
         <script src="https://kit.fontawesome.com/d3d56d9400.js" crossorigin="anonymous"></script>
+        <script src="scripts/dateLimit.js"></script>
 
     </head>
 
@@ -29,23 +30,18 @@
 
         <main class="text-center full-width">
         
-            <h1 class="black-txt">Discover Your <span class="blue-txt">Akan </span>Name</h1>
-            <br>
+            <h1 class="black-txt">Discover Your <span class="blue-txt">Akan </span>Name</h1><br>
+            
             <p>In Ghanaian culture, when a child is born they are given a first name 
                  as a 'day name' which corresponds to the day in the week they were born. This is their Akan name. 
             </p>
 
             <p>Fill in your gender and date of birth below to find out what yours is.</p>
 
-            <div class="spacer"> </div><br> 
-            
+            <div class="spacer"> </div><br>             
 
             <form action="" method="post" name="genderAndDob" id="genderAndDob">
-
-                <div class="errorMessages">
-
-
-                </div>
+              
                <div class="container"> 
 
                 <div class="row">
@@ -65,7 +61,7 @@
 
                     <div class="dob col-lg-4 col-md-6">
                         <label for="dob"><span class="input-label"><i class="fa-solid fa-baby"></i> Date of Birth </span></label>
-                        <input type="date" name="dob" id="dob" required>
+                        <input type="date" name="dob" id="dob"  max = '2022-03-07' required>
 
                     </div>
 
