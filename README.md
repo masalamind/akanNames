@@ -21,7 +21,7 @@ The link to the live site is
 
 ## Copyright and licencse info
 - Copyright of masalacollective,masalamind 
-28/02/2022
+07/03/2022
 
 - The code is open source under GPL 
 
