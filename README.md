@@ -5,8 +5,9 @@ Matches users to their Akan names based on their day of birth.
 ## Contributors
 Designed and coded by John Muiruri 
 
-## Description
-It provides male and female users with their Akan names based on their date of birth
+### Description
+It provides male and female users with their Akan names based on their date of birth.
+Akan names come from the Ghananian African culture. 
 
 ## Access 
 The website is hosted online by github pages online on masalamind.github.io/masalamind 
