@@ -1,4 +1,4 @@
-# akanNames
+# AKAN NAMES WEBSITE 
 Matches users to their Akan names based on their day of birth.
 
 
@@ -11,7 +11,7 @@ It provides male and female users with their Akan names based on their date of b
 ## Access 
 The website is hosted online by github pages online on masalamind.github.io/masalamind 
 The link to the live site is 
-(masalamind portfolio)[https://masalamind.github.io/portfolio/]
+(masalamind portfolio)[https://masalamind.github.io/akanNames/]
 
 ## Setup Instructions 
 - The program will run in any modern web browser
